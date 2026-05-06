@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu & Order | Fresh Bites</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans pb-24">
+
+  <!-- ================= HEADER / HERO ================= -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-bold text-slate-900">Fresh Bites</h1>
+        <div class="flex items-center gap-2 mt-0.5">
+          <span class="flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-green-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+          </span>
+          <span class="text-xs font-medium text-green-700">Open Now • Delivers until 10 PM</span>
+        </div>
+      </div>
+      <a href="tel:+250780000000" class="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-2 rounded-lg text-sm font-semibold transition">
+        📞 <span class="hidden sm:inline">Call Now</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-6">
+
+    <!-- ================= QUICK CATEGORY NAVIGATION ================= -->
+    <div class="flex gap-2 overflow-x-auto pb-4 mb-6 sticky top-[65px] bg-slate-50 z-30 py-2">
+      <a href="#breakfast" class="flex-shrink-0 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition">🍳 Breakfast</a>
+      <a href="#lunch" class="flex-shrink-0 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition">🍛 Lunch</a>
+      <a href="#drinks" class="flex-shrink-0 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition">🥤 Drinks</a>
+      <a href="#packages" class="flex-shrink-0 bg-white border border-slate-200 hover:border-slate-300 text-slate-700 px-4 py-2 rounded-full text-sm font-medium shadow-sm transition">📦 Packages</a>
+    </div>
+
+    <!-- ================= MENU SECTION ================= -->
+    <div class="space-y-12">
+
+      <!-- CATEGORY: BREAKFAST -->
+      <section id="breakfast" class="scroll-mt-28">
+        <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">🍳 Breakfast</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          
+          <!-- Food Item Card -->
+          <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex gap-4">
+            <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 overflow-hidden">
+              <img src="https://unsplash.com" alt="Pancake Stack" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-slate-900 text-base">Classic Pancake Stack</h3>
+                  <span class="font-bold text-slate-900">4,500 RWF</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-1 line-clamp-2">Fluffy pancakes served with fresh maple syrup and berries.</p>
+              </div>
+              <a href="https://wa.me" target="_blank" class="mt-2 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-center py-1.5 rounded-lg text-sm font-bold transition flex items-center justify-center gap-1">
+                <span>Add via WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Food Item Card -->
+          <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex gap-4">
+            <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 overflow-hidden">
+              <img src="https://unsplash.com" alt="Omelette" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-slate-900 text-base">Spanish Omelette</h3>
+                  <span class="font-bold text-slate-900">3,800 RWF</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-1 line-clamp-2">Three eggs with diced bell peppers, onions, and melted cheese.</p>
+              </div>
+              <a href="https://wa.me" target="_blank" class="mt-2 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-center py-1.5 rounded-lg text-sm font-bold transition flex items-center justify-center gap-1">
+                <span>Add via WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CATEGORY: LUNCH -->
+      <section id="lunch" class="scroll-mt-28">
+        <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-2 mb-4">🍛 Lunch</h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          
+          <!-- Food Item Card -->
+          <div class="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex gap-4">
+            <div class="w-24 h-24 bg-slate-100 rounded-lg flex-shrink-0 overflow-hidden">
+              <img src="https://unsplash.com" alt="Grilled Chicken" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col justify-between flex-grow">
+              <div>
+                <div class="flex justify-between items-start">
+                  <h3 class="font-bold text-slate-900 text-base">Grilled Chicken Bowl</h3>
+                  <span class="font-bold text-slate-900">6,500 RWF</span>
+                </div>
+                <p class="text-xs text-slate-500 mt-1 line-clamp-2">Tender chicken breast served with jollof rice and roasted greens.</p>
+              </div>
+              <a href="https://wa.me" target="_blank" class="mt-2 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-center py-1.5 rounded-lg text-sm font-bold transition flex items-center justify-center gap-1">
+                <span>Add via WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= FIXED BOTTOM ACTION BAR ================= -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-4 py-3 shadow-lg z-50">
+    <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
+      <div class="hidden sm:block">
+        <p class="text-xs text-slate-500 font-medium">Ready to confirm your meal?</p>
+        <p class="text-sm font-bold text-slate-800">Quick chat orders via WhatsApp</p>
+      </div>
+      <a href="https://wa.me." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white text-center py-3 px-6 rounded-xl font-bold transition flex items-center justify-center gap-2 shadow-sm">
+        💬 Order Directly via WhatsApp
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
